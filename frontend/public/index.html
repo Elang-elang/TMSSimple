@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta
+    name="description"
+    content="Task Management System with Flask, Socket.IO, and React"
+  />
+  <title>Task Management System</title>
+  
+  <!-- Preconnect to backend services -->
+  <link rel="preconnect" href="http://localhost:5000" />
+  <link rel="preconnect" href="http://localhost:5001" />
+  
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  
+  <!-- Manifest (optional) -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  
+  <!-- Font loading (optional) -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" as="style" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" />
+  
+  <style>
+    /* Critical CSS for initial load */
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: #f8fafc;
+    }
+    
+    #root {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .loading-spinner {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border: 4px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      border-top-color: #3182ce;
+      animation: spin 1s ease-in-out infinite;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <noscript>
+    <div style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      z-index: 9999;
+      padding: 20px;
+      text-align: center;
+    ">
+      <div>
+        <h1 style="color: #2d3748; margin-bottom: 20px;">
+          JavaScript is required to run this application
+        </h1>
+        <p style="color: #4a5568; max-width: 600px; margin: 0 auto;">
+          The Task Management System requires JavaScript to function properly. 
+          Please enable JavaScript in your browser settings or use a modern browser 
+          that supports JavaScript.
+        </p>
+      </div>
+    </div>
+  </noscript>
+  
+  <div id="root">
+    <div style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      gap: 20px;
+    ">
+      <div class="loading-spinner"></div>
+      <p style="color: #4a5568;">Loading application...</p>
+    </div>
+  </div>
+  
+  <!--
+    This HTML file is a template.
+    If you open it directly in the browser, you will see an empty page.
 
+    You can add webfonts, meta tags, or analytics to this file.
+    The build step will place the bundled scripts into the <body> tag.
+
+    To begin the development, run `npm start` or `yarn start`.
+    To create a production bundle, use `npm run build` or `yarn build`.
+  -->
+</body>
+</html>
