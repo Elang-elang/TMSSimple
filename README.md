@@ -1,7 +1,4 @@
-# **🚀 TaskMaster AI: Intelligent Task Management System**  
-
-![TaskMaster AI Banner](https://via.placeholder.com/1200x400/2d3748/ffffff?text=TaskMaster+AI)  
-*Smart Task Management with Real-Time AI Predictions*  
+# **🚀 TaskMaster AI: Intelligent Task Management System simple**  
 
 ---
 
@@ -59,23 +56,19 @@ Built with **Python (Flask), React, and TensorFlow Lite**, this system is perfec
 
 ### **1️⃣ Clone & Install**  
 ```bash
-git clone https://github.com/yourusername/task-management-system.git
-cd task-management-system
+git clone https://github.com/Elang-elang/TMSSimple.git
+cd TMSSimple
 ```
 
 ### **2️⃣ Run the Backend & AI Service**  
 ```bash
 # Start the Flask backend (Port 5000)
 cd backend
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python app.py
 
 # Start the AI service (Port 5001)
 cd ../ai_service
-python -m venv venv
-source venv/bin/activate
 pip install -r requirements.txt
 python ai_service.py
 ```
@@ -126,33 +119,10 @@ taskmaster-ai/
 
 ## **📊 Dashboard Preview**  
 
-![Dashboard Screenshot](https://via.placeholder.com/800x400/4a5568/ffffff?text=Interactive+Dashboard+Preview)  
+![Dashboard Screenshot Ilustration](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnpblzerH29ISuxSABNDb6EC9nerXbVjyvvCaZQgApWhNheRfRyDgO9uIk&s=10)  
 
 - **Task Status Distribution** (Bar Chart)  
 - **Complexity Breakdown** (Pie Chart)  
 - **Avg. Estimated vs. Actual Time**  
 
 ---
-
-## **📜 License**  
-MIT License – **Free to use, modify, and distribute!**  
-
----
-
-## **💡 What’s Next?**  
-- [ ] **User authentication** (JWT/OAuth)  
-- [ ] **Team collaboration** (multi-user tasks)  
-- [ ] **Mobile app** (React Native)  
-
-**🌟 Want to contribute?** Open an issue or submit a PR!  
-
----
-
-### **🚀 Ready to Supercharge Your Productivity?**  
-**Clone the repo and start managing tasks the smart way!**  
-
-```bash
-git clone https://github.com/yourusername/task-management-system.git
-```  
-
-**Happy tasking!** 🎯
