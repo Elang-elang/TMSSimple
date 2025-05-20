@@ -1,10 +1,10 @@
-# **🚀 TaskMaster AI: Intelligent Task Management System simple**  
+# **🚀 TaskMaster AI: Intelligent Task Management System Simple**  
 
 ---
 
 ## **✨ Why TaskMaster AI?**  
 
-Tired of manually estimating how long tasks will take? **TaskMaster AI** is a **real-time, AI-powered task management system** that:  
+Tired of manually estimating how long tasks will take? **TaskMaster AI** is a **real-time, AI-powered task management system but more simple** *(TMSSimple)* that:  
 
 ✅ **Predicts task completion time** using machine learning  
 ✅ **Syncs instantly** across devices with WebSocket technology  
@@ -64,12 +64,16 @@ cd TMSSimple
 ```bash
 # Start the Flask backend (Port 5000)
 cd backend
-pip install -r requirements.txt
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install flask flask-socketio flask-cors apsw requests
 python app.py
 
 # Start the AI service (Port 5001)
 cd ../ai_service
-pip install -r requirements.txt
+python -m venv venv
+source venv/bin/activate
+pip install flask flask-cors numpy tflite-runtime # or TensorFlow
 python ai_service.py
 ```
 
@@ -87,7 +91,7 @@ npm start  # Runs on http://localhost:3000
 ## **📂 Project Structure**  
 
 ```
-taskmaster-ai/
+TMSSimple/
 ├── 📁 ai_service/        # AI prediction microservice
 │   ├── 🤖 ai_service.py  # Flask + TensorFlow Lite
 │   └── 📥 load_ai.py     # Downloads ML model
@@ -117,7 +121,7 @@ taskmaster-ai/
 
 ---
 
-## **📊 Dashboard Preview**  
+## **📊 Dashboard Preview Ilustration (almost same 50/50)**  
 
 ![Dashboard Screenshot Ilustration](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnpblzerH29ISuxSABNDb6EC9nerXbVjyvvCaZQgApWhNheRfRyDgO9uIk&s=10)  
 
